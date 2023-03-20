@@ -13,7 +13,9 @@ const ItemList = ({datos}) => {
                 id={dato.ID}
                 nombre={dato.NOMBRE}
                 cargo={dato.CARGO}
+                horas={dato.HORAS}
                 fecha={dato.FECHA}
+                valor={dato.VALOR}
                 />
 
                 ))}

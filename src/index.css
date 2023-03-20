@@ -87,15 +87,10 @@ p{
   flex: content;
 
 }
-.boton{ 
-  color: blueviolet;
-  width: 2rem;
-  height: 2rem;
-  border-radius:50%;
-}
+
 .contenedor-item{
 
-  margin: 1rem;
+  margin: 3rem;
   padding: 1rem;
 }
 .contenedor-cards{
@@ -125,8 +120,25 @@ p{
   justify-items: center;
   justify-content: center;
   
-  
 }
+.boton{ 
+  color: blueviolet;
+  width: 2rem;
+  height: 2rem;
+  border-radius:50%;
+  margin: 0.5rem;
+}
+.botons-add{
+  margin: auto ;
+  padding: 2rem;
+}
+.boton-adicionar{
+  border-radius: 50%;
+  padding: 1rem;
+  background-color: rgb(11, 108, 254);
+  color: white;
+}
+
 .formulario{
   display: flex;
   display: block;
@@ -134,19 +146,40 @@ p{
  
   margin: 10rem; 
 }
-.nombre{
-  margin: 3rem;
+.formulario label{
+  margin: 1rem 4rem;
+  width: 20rem;
 }
-.identificacion{
-  margin: 3rem;
+.formulario input{
+  margin: 1rem 3rem;
 }
+
 .enviar-solicitud{
   height: 3rem;
   width: 15rem;
+  margin: 3rem;
+
+
+
+
 }
 .logo{
   width: 20%;
 }
 .foto-inicio{
   margin-top: 3rem ;
+}
+.contenedor-item-compra{
+  height: 20rem;
+  width: 50%;
+  margin: auto;
+  margin-top: 3rem;
+}
+.boton-card-compra{
+  margin: 2rem;
+  display: flex;
+  justify-items:flex-start;
+}
+.boton-card-aceptar-compra{
+  margin: auto;
 }

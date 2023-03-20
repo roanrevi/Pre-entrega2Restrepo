@@ -6,17 +6,17 @@ import { useParams } from 'react-router-dom';
 
 const ItemListConteiner = ({greeting}) => {
     const{cargo}=useParams();
-
+    const[loading, serLoading]=useState(true);
     const [personal, setPersonal]=useState([]);
 
-            console.log(personal);
+            //console.log(personal);
 
             useEffect(()=>{
                 async function fetchInfo(){
                     try{
                         const response= await fetch(data);
                         const data=await response.json();
-                        setPersonal(data);
+                        setPersonal(data)
                         }
                         catch (error){
                             console.log(error)
@@ -26,7 +26,7 @@ const ItemListConteiner = ({greeting}) => {
             fetchInfo();
             }, []); 
             const persFilter=data.filter((dato)=>dato.CARGO==cargo);
-            console.log(persFilter);
+            //console.log(persFilter);
     return (        
         <>        
             <p>{greeting}</p>

@@ -6,6 +6,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import Logo from './Logo';
 import { Link } from 'react-router-dom';
+import { CartContext } from "../context/ShoppingCartContext";
 function ColorSchemesExample() {
     return (
         <>
@@ -50,11 +51,10 @@ function ColorSchemesExample() {
                                 </NavDropdown>
                             </Navbar.Collapse>
                         </Nav>
-                        <Link to ={"/cart"}><CartWidget/></Link>
+                        <Link to ={"/cart"}><CartWidget /></Link>
                         
-                        <div className='items'>
-                        <p> 5 </p>
-                            </div>
+                        
+                        
                 </Container>
             
         </Navbar>

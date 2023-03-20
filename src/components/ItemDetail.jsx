@@ -1,7 +1,8 @@
 import React from 'react'
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { useParams } from "react-router-dom";
+import ShoppingCartProvider from '../context/ShoppingCartContext';
+import ItemCount from './ItemCount';
 
 const ItemDetail = ({datos}) => {
     const { id } = useParams();
@@ -21,7 +22,31 @@ const ItemDetail = ({datos}) => {
                     <Card.Text className='card-cargo'>
                     FECHA:{dato.FECHA}
                     </Card.Text>
+                    <Card.Text className='card-cargo'>
+                    HORAS DISPONIBLES:{dato.HORAS}
+                    </Card.Text>
+                    <Card.Text className='card-cargo'>
+                    VALOR DE LA HORA:{dato.VALOR}
+                    </Card.Text>
                     </Card.Body>
+                    <ItemCount
+                    nombre={dato.NOMBRE}
+                    horas={dato.HORAS}
+                    cargo={dato.CARGO}
+                    fecha={dato.FECHA}
+                    id={dato.ID} 
+                    valor={dato.VALOR}         
+                    
+                    />
+                    <ShoppingCartProvider
+                    nombre={dato.NOMBRE}
+                    horas={dato.HORAS}
+                    cargo={dato.CARGO}
+                    fecha={dato.FECHA}
+                    id={dato.ID} 
+                    valor={dato.VALOR}     
+                    
+                    />
                     </Card>
                 </div>
                 

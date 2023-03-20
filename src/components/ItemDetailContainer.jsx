@@ -6,11 +6,11 @@ import { useParams } from 'react-router-dom';
 
 const ItemDetailContainer = () => {    
         const{id}=useParams();
-        console.log(id)
+        //console.log(id)
             
         
         const [personal, setPersonal]=useState([]);
-            console.log(personal);
+            //console.log(personal);
             useEffect(()=>{
                 async function fetchInfo(){
                     try{
